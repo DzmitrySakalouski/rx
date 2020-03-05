@@ -1,0 +1,6 @@
+module Pods_rx_goodslist {
+  umbrella header "Pods-rx_goodslist-umbrella.h"
+
+  export *
+  module * { export * }
+}
