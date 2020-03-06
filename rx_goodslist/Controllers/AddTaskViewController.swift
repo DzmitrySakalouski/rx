@@ -36,6 +36,8 @@ class AddTaskViewController: UIViewController {
         navigationItem.rightBarButtonItem = saveButton
         navigationController?.navigationBar.tintColor = UIColor.white
         configureView()
+        
+        self.navigationController!.navigationBar.topItem!.title = ""
     }
     
     func configureView() {
