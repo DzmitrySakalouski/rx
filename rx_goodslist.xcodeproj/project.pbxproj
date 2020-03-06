@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		41A7115E24122A9D005CE66E /* TextInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41A7115D24122A9D005CE66E /* TextInput.swift */; };
+		41A7116124122B84005CE66E /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41A7116024122B84005CE66E /* Colors.swift */; };
+		41A7116424125F82005CE66E /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41A7116324125F82005CE66E /* Task.swift */; };
 		41FB106B241143100085AA44 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41FB106A241143100085AA44 /* AppDelegate.swift */; };
 		41FB106D241143100085AA44 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41FB106C241143100085AA44 /* SceneDelegate.swift */; };
 		41FB1072241143100085AA44 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41FB1070241143100085AA44 /* Main.storyboard */; };
@@ -21,6 +24,9 @@
 /* Begin PBXFileReference section */
 		4116662324117ACD0087B968 /* RxCocoa.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = RxCocoa.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		41166625241184810087B968 /* libMaterialComponents.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libMaterialComponents.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		41A7115D24122A9D005CE66E /* TextInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextInput.swift; sourceTree = "<group>"; };
+		41A7116024122B84005CE66E /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		41A7116324125F82005CE66E /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
 		41FB1067241143100085AA44 /* rx_goodslist.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = rx_goodslist.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		41FB106A241143100085AA44 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		41FB106C241143100085AA44 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -48,6 +54,38 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		41A7115B24122A6E005CE66E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				41A7115C24122A87005CE66E /* Common */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		41A7115C24122A87005CE66E /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				41A7115D24122A9D005CE66E /* TextInput.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		41A7115F24122B6D005CE66E /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				41A7116024122B84005CE66E /* Colors.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		41A7116224125F70005CE66E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				41A7116324125F82005CE66E /* Task.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		41FB105E241143100085AA44 = {
 			isa = PBXGroup;
 			children = (
@@ -69,6 +107,9 @@
 		41FB1069241143100085AA44 /* rx_goodslist */ = {
 			isa = PBXGroup;
 			children = (
+				41A7116224125F70005CE66E /* Models */,
+				41A7115F24122B6D005CE66E /* Constants */,
+				41A7115B24122A6E005CE66E /* Views */,
 				41FB10812411435A0085AA44 /* Utils */,
 				41FB107E2411431A0085AA44 /* Controllers */,
 				41FB106A241143100085AA44 /* AppDelegate.swift */,
@@ -232,11 +273,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				41A7116424125F82005CE66E /* Task.swift in Sources */,
 				41FB1083241143720085AA44 /* Extensions.swift in Sources */,
 				41FB10852411439B0085AA44 /* AddTaskViewController.swift in Sources */,
 				41FB10802411433F0085AA44 /* TaskListControllerView.swift in Sources */,
+				41A7116124122B84005CE66E /* Colors.swift in Sources */,
 				41FB106B241143100085AA44 /* AppDelegate.swift in Sources */,
 				41FB106D241143100085AA44 /* SceneDelegate.swift in Sources */,
+				41A7115E24122A9D005CE66E /* TextInput.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
